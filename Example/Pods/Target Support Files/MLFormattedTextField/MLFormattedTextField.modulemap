@@ -1,0 +1,6 @@
+framework module MLFormattedTextField {
+  umbrella header "MLFormattedTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

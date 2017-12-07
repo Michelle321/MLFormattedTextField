@@ -1,25 +1,157 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MLFormattedTextField_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number with prefix (416)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7p-vt-Krl">
+                                <rect key="frame" x="16" y="55" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number withoud prefix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gT-JN-EC5">
+                                <rect key="frame" x="16" y="156" width="228" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-8K-pBk">
+                                <rect key="frame" x="16" y="257" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MacBook Model number(MC97566)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAS-l1-as3">
+                                <rect key="frame" x="16" y="358" width="275.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Card number with last Char as Letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="It5-Ur-jKJ">
+                                <rect key="frame" x="16" y="459" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZo-ye-Tkq" customClass="MLFormattedTextField" customModule="MLFormattedTextField">
+                                <rect key="frame" x="16" y="96" width="339" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="K2Y-yv-Ha6"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j87-We-dom" customClass="MLFormattedTextField" customModule="MLFormattedTextField">
+                                <rect key="frame" x="16" y="197" width="339" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="SrB-QZ-u3x"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4T-n1-bdU" customClass="MLFormattedTextField" customModule="MLFormattedTextField">
+                                <rect key="frame" x="16" y="298" width="339" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="aWN-aJ-cYs"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9f9-fw-Wsi" customClass="MLFormattedTextField" customModule="MLFormattedTextField">
+                                <rect key="frame" x="16" y="399" width="339" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ENn-AS-OzR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9L-wq-wXV" customClass="MLFormattedTextField" customModule="MLFormattedTextField">
+                                <rect key="frame" x="16" y="510" width="339" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="pjt-e2-8W0"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="B7p-vt-Krl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="34G-Gz-IQU"/>
+                            <constraint firstItem="Z9L-wq-wXV" firstAttribute="top" secondItem="It5-Ur-jKJ" secondAttribute="bottom" constant="30" id="4sg-AA-KPe"/>
+                            <constraint firstItem="9f9-fw-Wsi" firstAttribute="trailing" secondItem="a4T-n1-bdU" secondAttribute="trailing" id="7d1-0O-FSr"/>
+                            <constraint firstItem="B7p-vt-Krl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="8Xb-JQ-TGN"/>
+                            <constraint firstItem="a4T-n1-bdU" firstAttribute="leading" secondItem="FNs-8K-pBk" secondAttribute="leading" id="A8P-Qc-o8E"/>
+                            <constraint firstItem="a4T-n1-bdU" firstAttribute="top" secondItem="FNs-8K-pBk" secondAttribute="bottom" constant="20" id="BFj-tV-xk7"/>
+                            <constraint firstItem="It5-Ur-jKJ" firstAttribute="leading" secondItem="rAS-l1-as3" secondAttribute="leading" id="Fcj-3n-Tqf"/>
+                            <constraint firstItem="wZo-ye-Tkq" firstAttribute="leading" secondItem="B7p-vt-Krl" secondAttribute="leading" id="GgM-BZ-NhT"/>
+                            <constraint firstItem="Z9L-wq-wXV" firstAttribute="leading" secondItem="It5-Ur-jKJ" secondAttribute="leading" id="IBU-dq-fQn"/>
+                            <constraint firstItem="It5-Ur-jKJ" firstAttribute="top" secondItem="9f9-fw-Wsi" secondAttribute="bottom" constant="30" id="LUq-TE-mz9"/>
+                            <constraint firstItem="rAS-l1-as3" firstAttribute="top" secondItem="a4T-n1-bdU" secondAttribute="bottom" constant="30" id="Nfy-bk-jDt"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0gT-JN-EC5" secondAttribute="trailing" constant="20" symbolic="YES" id="TQ2-2Z-Lki"/>
+                            <constraint firstItem="0gT-JN-EC5" firstAttribute="leading" secondItem="B7p-vt-Krl" secondAttribute="leading" id="WfO-kQ-7Om"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rAS-l1-as3" secondAttribute="trailing" constant="20" symbolic="YES" id="XRm-mk-uoc"/>
+                            <constraint firstItem="FNs-8K-pBk" firstAttribute="leading" secondItem="0gT-JN-EC5" secondAttribute="leading" id="XzJ-sn-3Nw"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FNs-8K-pBk" secondAttribute="trailing" constant="20" symbolic="YES" id="aKv-n1-ORj"/>
+                            <constraint firstItem="j87-We-dom" firstAttribute="top" secondItem="0gT-JN-EC5" secondAttribute="bottom" constant="20" id="aup-QE-Cay"/>
+                            <constraint firstItem="Z9L-wq-wXV" firstAttribute="trailing" secondItem="9f9-fw-Wsi" secondAttribute="trailing" id="bFP-ap-wzW"/>
+                            <constraint firstItem="0gT-JN-EC5" firstAttribute="top" secondItem="wZo-ye-Tkq" secondAttribute="bottom" constant="30" id="cKI-Ka-7yV"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="It5-Ur-jKJ" secondAttribute="trailing" constant="20" symbolic="YES" id="d8n-yG-6WG"/>
+                            <constraint firstItem="rAS-l1-as3" firstAttribute="leading" secondItem="FNs-8K-pBk" secondAttribute="leading" id="dDA-iR-x9b"/>
+                            <constraint firstItem="9f9-fw-Wsi" firstAttribute="leading" secondItem="rAS-l1-as3" secondAttribute="leading" id="dGM-NJ-IoW"/>
+                            <constraint firstItem="j87-We-dom" firstAttribute="leading" secondItem="0gT-JN-EC5" secondAttribute="leading" id="f5D-vq-EoD"/>
+                            <constraint firstAttribute="trailing" secondItem="wZo-ye-Tkq" secondAttribute="trailing" constant="20" id="hqc-9c-sVG"/>
+                            <constraint firstItem="9f9-fw-Wsi" firstAttribute="top" secondItem="rAS-l1-as3" secondAttribute="bottom" constant="20" id="jYg-g8-MEe"/>
+                            <constraint firstItem="FNs-8K-pBk" firstAttribute="top" secondItem="j87-We-dom" secondAttribute="bottom" constant="30" id="pXJ-5j-6EN"/>
+                            <constraint firstItem="j87-We-dom" firstAttribute="trailing" secondItem="wZo-ye-Tkq" secondAttribute="trailing" id="t7i-bv-Gif"/>
+                            <constraint firstItem="wZo-ye-Tkq" firstAttribute="top" secondItem="B7p-vt-Krl" secondAttribute="bottom" constant="20" id="t7y-On-Qdf"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="B7p-vt-Krl" secondAttribute="trailing" constant="20" symbolic="YES" id="ukr-aO-Hed"/>
+                            <constraint firstItem="a4T-n1-bdU" firstAttribute="trailing" secondItem="j87-We-dom" secondAttribute="trailing" id="ytE-vw-py3"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1ds-dN-nUf" appends="YES" id="7Gv-wC-FAq"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="HealthCardNumber" destination="Z9L-wq-wXV" id="A7f-xp-NeD"/>
+                        <outlet property="creditCard" destination="a4T-n1-bdU" id="atw-KC-Rcf"/>
+                        <outlet property="modelNumber" destination="9f9-fw-Wsi" id="9jg-81-XId"/>
+                        <outlet property="phoneNumber" destination="wZo-ye-Tkq" id="vKD-8d-yIA"/>
+                        <outlet property="phoneNumberNoPrefix" destination="j87-We-dom" id="oXm-Kd-nlz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1ds-dN-nUf">
+                    <connections>
+                        <action selector="tapOutside:" destination="vXZ-lx-hvc" id="ucv-V1-Kxi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,22 @@
+{
+  "name": "MLFormattedTextField",
+  "version": "0.1.0",
+  "summary": "A short description of MLFormattedTextField.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Michelle/MLFormattedTextField",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Michelle": "michelle@clearbridgemobile.com"
+  },
+  "source": {
+    "git": "https://github.com/Michelle/MLFormattedTextField.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MLFormattedTextField/Classes/**/*"
+}
